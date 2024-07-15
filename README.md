@@ -28,7 +28,7 @@ Create a Pusher account. Under "Channels," click "Get Started." Name the app `pu
 
 Head to "App Keys" on the left side then copy all that data and replace my data with your data in server.js 
 
-On the left side, click "Debug Console" (this is how you send notifications online). For the channel, put:
+On the left side, click "Debug Console" and click on "Event Creator" (this is how you send notifications online). For the channel, put:
 ```
 pusher_notifs
 ```
