@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.notification-bell {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.bell-icon {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.unread-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.notifications {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  display: none;
+}
+
+.notification-bell:hover .notifications {
+  display: block;
+}
+
+.notification {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.notification:last-child {
+  border-bottom: none;
+}
