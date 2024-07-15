@@ -1,7 +1,7 @@
 # notifs-pusher
-for backend i used <npm install express pusher body-parser cors>
-for frontend i used <npm install pusher-js>
-for server.js i cd to server and started it with <node server.js>
+for backend i used npm install express pusher body-parser cors
+for frontend i used npm install pusher-js
+for server.js i cd to server and started it with node server.js
 and in another terminal i did <npm start>
 
 this is what my file system looked like
