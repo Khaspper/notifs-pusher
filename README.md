@@ -1,39 +1,73 @@
-# notifs-pusher
-for backend i used npm install express pusher body-parser cors
-for frontend i used npm install pusher-js
-for server.js i cd to server and started it with node server.js
-and in another terminal i did <npm start>
 
-this is what my file system looked like
+# notifs-pusher
+
+For the backend, I used:
+```
+npm install express pusher body-parser cors
+```
+
+For the frontend, I used:
+```
+npm install pusher-js
+```
+
+To start the server, I navigated to the `server` directory and started it with:
+```
+node server.js
+```
+
+In another terminal, I started the frontend with:
+```
+npm start
+```
+
+This is what my file system looked like:
 ![image](https://github.com/user-attachments/assets/10de7702-6f85-458f-87de-5b7446a8a895)
 
-Create a pusher account 
-under "Channels" click get started
-name the app "pusher_notifs" leave everything else untouched and press create app
-on the left side clicj Debug Console (this is how you send notifications online)
-for channel put "pusher_notifs"
-for event put "new-notification"
-for data put
-{
-"message": "put whatever in here"
-}
+Create a Pusher account. Under "Channels," click "Get Started." Name the app `pusher_notifs`, leave everything else untouched, and press "Create App."
 
-MAKE SURE YOU DONT PUT A COMMA AFTER THE LAST VALUE IN THE JSON!!! IT WON'T SHOW UP
+On the left side, click "Debug Console" (this is how you send notifications online). For the channel, put:
+```
+pusher_notifs
+```
 
-LIKE THIS (BAD EXAMPLE):
-{
-"message": "put whatever in here",
-}
-do it LIKE THIS (GOOD EXAMPLES):
-{
-"message": "put whatever in here"
-}
-or 
-{
-"another key": "whatever",
-"another key": "whatever",
-"another key": "whatever",
-"message": "put whatever in here"
-}
+For the event, put:
+```
+new-notification
+```
 
-before pressing send event make sure you start your server and the site is up on your local host
+For the data, put:
+```
+{
+  "message": "put whatever in here"
+}
+```
+
+**MAKE SURE YOU DON'T PUT A COMMA AFTER THE LAST VALUE IN THE JSON!!! IT WON'T SHOW UP**
+
+**BAD EXAMPLE:**
+```
+{
+  "message": "put whatever in here",
+}
+```
+
+**GOOD EXAMPLES:**
+```
+{
+  "message": "put whatever in here"
+}
+```
+
+or
+
+```
+{
+  "another key": "whatever",
+  "another key": "whatever",
+  "another key": "whatever",
+  "message": "put whatever in here"
+}
+```
+
+Before pressing "Send Event," make sure you start your server and the site is up on your localhost.
