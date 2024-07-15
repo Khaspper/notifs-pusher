@@ -16,7 +16,7 @@ To start the server, I navigated to the `server` directory and started it with:
 node server.js
 ```
 
-In another terminal, I started the frontend with:
+In another terminal, I cd to front end and I started the frontend with:
 ```
 npm start
 ```
@@ -25,6 +25,8 @@ This is what my file system looked like:
 ![image](https://github.com/user-attachments/assets/10de7702-6f85-458f-87de-5b7446a8a895)
 
 Create a Pusher account. Under "Channels," click "Get Started." Name the app `pusher_notifs`, leave everything else untouched, and press "Create App."
+
+Head to "App Keys" on the left side then copy all that data and replace my data with your data in server.js 
 
 On the left side, click "Debug Console" (this is how you send notifications online). For the channel, put:
 ```
