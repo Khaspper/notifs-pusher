@@ -62,15 +62,15 @@ const App = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({ listingId }), // Send the listingId in the request body
-      });
+      })
       if (!response.ok) {
-        throw new Error('Network response was not ok');
+        throw new Error('Network response was not ok')
       }
-      console.log('Draft timeout notification sent successfully');
+      console.log('Draft timeout notification sent successfully')
     } catch (error) {
-      console.error('Error sending draft timeout notification:', error);
+      console.error('Error sending draft timeout notification:', error)
     }
-  };
+  }
 
   return (
     <div className="App">
