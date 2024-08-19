@@ -19,7 +19,7 @@ const pusher = new Pusher({
 async function getOldListings() {
   const tenSecondsAgo = new Date(Date.now() - 10000)
 
-  // Mock data for testing: Pretend these listings were created at different times
+  // Test data for testing: Pretend these listings were created at different times
   const listings = [
     { id: 1, status: 'active', createdAt: new Date(Date.now() - 15000) }, // 15 seconds ago
   ]
